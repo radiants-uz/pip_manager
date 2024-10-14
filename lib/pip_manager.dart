@@ -7,6 +7,8 @@
 
 import 'pip_manager_platform_interface.dart';
 
+export './pip_manager.dart';
+
 class PiPManager {
   // Expose the platform-specific implementation via the platform interface
   static Future<void> startPictureInPictureMode([String? videoUrl]) {
