@@ -5,18 +5,4 @@
 // platforms in the `pubspec.yaml` at
 // https://flutter.dev/to/pubspec-plugin-platforms.
 
-import 'pip_manager_platform_interface.dart';
-
 export './pip_manager.dart';
-
-class PiPManager {
-  // Expose the platform-specific implementation via the platform interface
-  static Future<void> startPictureInPictureMode([String? videoUrl]) {
-    return PiPManagerPlatform.instance.startPictureInPictureMode(videoUrl);
-  }
-
-  // Listen for PiP disabled events
-  static Stream<int?> get onPipDisabled {
-    return PiPManagerPlatform.instance.onPipDisabled;
-  }
-}
