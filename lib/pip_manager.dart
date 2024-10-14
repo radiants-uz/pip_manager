@@ -5,4 +5,4 @@
 // platforms in the `pubspec.yaml` at
 // https://flutter.dev/to/pubspec-plugin-platforms.
 
-export './pip_manager.dart';
+export './pip_manager_main.dart';
